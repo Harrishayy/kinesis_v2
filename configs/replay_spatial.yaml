@@ -1,0 +1,21 @@
+# Replay retargeted human hand tracks in LIBERO-Spatial task 2 (bowl at table centre -> plate).
+suite: libero_spatial
+task_id: 2
+object_key: akita_black_bowl_1_pos
+target_key: plate_1_pos
+# world-frame offsets applied to the anchors (metres): grasp the bowl rim, not its centre;
+# release slightly above the plate.
+grasp_offset_xyz: [0.0, 0.0, 0.0]
+release_offset_xyz: [0.0, 0.0, 0.03]
+z_grasp: 0.0        # EE height at grasp relative to the bowl position
+z_lift: 0.15        # EE height for approach / carry relative to table-plane object height
+hz: 20
+image_size: 256
+flip_images: true   # HuggingFaceVLA/libero convention: LIBERO renders are rotated 180 deg
+tracker: {kp: 8.0, ff: 1.0, pos_gain_m: 0.05, grip_lead_steps: 2}
+n_init_states: 10   # LIBERO ships 50 per task; each hand track is re-anchored per init state
+settle_steps: 10
+max_steps: 280
+hold_after_release: 10
+keep_failures: false
+out_repo_id: harrishayy/ego_bowl_spatial2
