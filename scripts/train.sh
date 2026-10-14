@@ -17,6 +17,6 @@ uv run lerobot-train \
   --batch_size=32 \
   --steps=5000 \
   --save_freq=1000 \
-  --eval_freq=0 \
+  --env_eval_freq=0 \
   --wandb.enable=false \
   "$@"
