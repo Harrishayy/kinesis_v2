@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: kinesis2
+Version: 0.1.0
+Summary: Phone-recorded hand video -> Panda arm in LIBERO: retargeted human data, a small policy, robustness and latency evals
+Requires-Python: <3.13,>=3.10
+Requires-Dist: numpy
+Requires-Dist: opencv-python-headless
+Requires-Dist: mediapipe
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: pyyaml
+Requires-Dist: tqdm
+Requires-Dist: imageio[ffmpeg]
+Provides-Extra: sim
+Requires-Dist: lerobot[libero,smolvla]; extra == "sim"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: ruff; extra == "dev"

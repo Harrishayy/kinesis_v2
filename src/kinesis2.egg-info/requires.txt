@@ -1,0 +1,15 @@
+numpy
+opencv-python-headless
+mediapipe
+scipy
+matplotlib
+pyyaml
+tqdm
+imageio[ffmpeg]
+
+[dev]
+pytest
+ruff
+
+[sim]
+lerobot[libero,smolvla]

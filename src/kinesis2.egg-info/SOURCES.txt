@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/kinesis2/__init__.py
+src/kinesis2/hands.py
+src/kinesis2.egg-info/PKG-INFO
+src/kinesis2.egg-info/SOURCES.txt
+src/kinesis2.egg-info/dependency_links.txt
+src/kinesis2.egg-info/requires.txt
+src/kinesis2.egg-info/top_level.txt
+tests/test_hands.py
